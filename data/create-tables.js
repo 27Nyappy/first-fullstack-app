@@ -8,13 +8,13 @@ client.connect()
     .then(() => {
         return client.query(`
             CREATE TABLE cubs (
-                id SERIAL PRIMARY KEY NOT NULL,
-                name VARCHAR(256) NOT NULL,
-                size VARCHAR(256) NOT NULL,
-                weight INTEGER NOT NULL,
-                friendly BOOLEAN NOT NULL,
-                url VARCHAR(256) NOT NULL,
-                fun_fact VARCHAR(256) NOT NULL
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(256),
+                size VARCHAR(256),
+                weight INTEGER,
+                friendly BOOLEAN,
+                url VARCHAR(256),
+                fun_fact VARCHAR(256)
             );
         `);
     })
