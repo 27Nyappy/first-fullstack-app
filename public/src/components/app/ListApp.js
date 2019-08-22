@@ -12,7 +12,9 @@ class ListApp extends Component {
         const list = new CubList({ cubs: [] });
         const main = dom.querySelector('main');
         main.appendChild(list.renderDOM());
+        console.log('hello')
         getCubs().then(cubs => {
+            console.log(cubs)
             list.update({ cubs });
         });
     }
