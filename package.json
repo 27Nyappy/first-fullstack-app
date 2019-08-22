@@ -1,0 +1,28 @@
+{
+  "name": "first-fullstack-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/27Nyappy/first-fullstack-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/27Nyappy/first-fullstack-app/issues"
+  },
+  "homepage": "https://github.com/27Nyappy/first-fullstack-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.2.1",
+    "express": "^4.17.1"
+  }
+}
