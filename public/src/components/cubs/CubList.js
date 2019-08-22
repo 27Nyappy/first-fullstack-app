@@ -4,8 +4,8 @@ import CubItem from './CubItem.js';
 class CubList extends Component {
 
     onRender(dom) {
+        console.log(this.props)
         const cubs = this.props.cubs;
-        console.log(cubs);
         cubs.forEach(cub => {
             const props = { cub: cub };
             const cubItem = new CubItem(props);

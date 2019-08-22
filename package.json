@@ -12,7 +12,9 @@
     "start:watch": "nodemon server.js",
     "create-tables": "node data/create-tables.js",
     "drop-tables": "node data/drop-tables.js",
-    "load-seed-data": "node data/load-seed-data.js"
+    "load-seed-data": "node data/load-seed-data.js",
+    "recreate-tables": "npm run drop-tables && npm run create-tables",
+    "setup-db": "npm run recreate-tables && npm run load-seed-data"
   },
   "repository": {
     "type": "git",
