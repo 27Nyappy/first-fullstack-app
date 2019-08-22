@@ -12,7 +12,7 @@ client.connect()
                 INSERT INTO cubs (name, size, weight, friendly, url, fun_fact)
                 VALUES ($1, $2, $3, $4, $5, $6)
             `,
-                [cub.name, cub.size, cub.weight, cub.friendly, cubs.url, cubs.funFact]);
+                [cub.name, cub.size, cub.weight, cub.friendly, cub.url, cub.funFact]);
             })
         );
     })
