@@ -28,7 +28,7 @@
     }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1440px) {
+@media screen and (min-width: 701px){
     .cub-item {
         width: 45%;
     }
