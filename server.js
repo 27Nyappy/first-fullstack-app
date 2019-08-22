@@ -23,7 +23,7 @@ app.get('/api/cubs', (req, res) => {
             weight,
             friendly,
             url,
-            funFact
+            fun_fact AS "funFact"
         FROM CUBS;
     `)
         .then(result => {
