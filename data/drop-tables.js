@@ -7,6 +7,7 @@ const client = new Client(process.env.DATABASE_URL);
 client.connect()
     .then(() => {
         return client.query(`
+            DROP TABLE IF EXISTS sizes;
             DROP TABLE IF EXISTS cubs;
     `);
     })
