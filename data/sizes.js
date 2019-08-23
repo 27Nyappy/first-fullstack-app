@@ -2,6 +2,5 @@ module.exports = [
     'Large',
     'Medium',
     'Extra-Large',
-    'Small',
-        
+    'Small',     
 ];

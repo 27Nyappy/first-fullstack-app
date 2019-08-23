@@ -13,6 +13,7 @@ class ListApp extends Component {
         const main = dom.querySelector('main');
         main.appendChild(list.renderDOM());
         getCubs().then(cubs => {
+            console.log(cubs);
             list.update({ cubs });
         });
     }

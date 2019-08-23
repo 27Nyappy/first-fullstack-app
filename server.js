@@ -32,21 +32,21 @@ app.get('/api/sizes', (req, res) => {
                 error: err.message || err
             });
         });
-})
+});
 
 app.get('/api/cubs', (req, res) => {
     client.query(`
         SELECT
-            c.name,
-            c.size_id,
-            s.size
-            c.weight,
-            c.friendly,
-            c.url,
-            c.fun_fact AS "funFact"
-        FROM cubs c
-        JOIN sizes s
-        ON c.size_id = s.id
+            name,
+            size_id,
+            size,
+            weight,
+            friendly,
+            url,
+            fun_fact AS "funFact"
+        FROM cubs
+        JOIN sizes
+        ON size_id = sizes.id
         ORDER BY name;
     `)
         .then(result => {
