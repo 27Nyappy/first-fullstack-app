@@ -15,3 +15,15 @@ export function getSizes() {
     return fetch(url)
         .then(response => response.json());
 }
+
+export function addCub(cub) {
+    const url = `${URL}/cubs`;
+    return fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cub)
+    })
+        .then(response => response.json()); 
+}

@@ -1,7 +1,7 @@
 require('dotenv').config();
 const pg = require('pg');
 const Client = pg.Client;
-const sizes = require('./sizes')
+const sizes = require('./sizes');
 const cubs = require('./cubs');
 const client = new Client(process.env.DATABASE_URL);
 
@@ -32,7 +32,7 @@ client.connect()
             `,
                 [cub.name, sizeId, cub.weight, cub.friendly, cub.url, cub.funFact]);
             })
-        )
+        );
     })
     .then(
         () => console.log('seed data load complete'),

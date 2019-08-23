@@ -20,7 +20,7 @@ app.get('/api/sizes', (req, res) => {
     client.query(`
         SELECT
             id,
-            size,
+            size
         FROM sizes
         ORDER BY size;
     `)
