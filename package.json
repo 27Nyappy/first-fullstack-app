@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "qunit test/index.js",
+    "test": "qunit public/test/index.js",
     "start": "node server.js",
     "start:watch": "nodemon server.js",
     "create-tables": "node data/create-tables.js",
