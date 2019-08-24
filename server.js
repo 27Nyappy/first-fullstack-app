@@ -34,6 +34,26 @@ app.get('/api/sizes', (req, res) => {
         });
 });
 
+app.post('/api/cubs', (req, res) => {
+    const cub = req.body;
+    console.log(cub);
+    client.query(`
+        INSERT INTO cubs (name, size_id, weight, friendly, url, fun_fact)
+        VALUES ($1, $2, $3, $4, $5, $6)
+        RETURNING *;
+    `,
+    [cub.name, cub.size, cub.weight, cub.friendly, cub.url, cub.funFact]
+    )
+        .then(result => {
+            res.json(result.rows[0]);
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err.message || err
+            });
+        });
+});
+
 app.get('/api/cubs', (req, res) => {
     client.query(`
         SELECT

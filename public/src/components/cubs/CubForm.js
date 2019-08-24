@@ -10,14 +10,14 @@ class FormApp extends Component {
             const cub = {
                 name: formData.get('name'),
                 url: formData.get('image'),
-                size: formData.get('size'),
+                size: formData.get('size-id'),
                 weight: +formData.get('weight'),
                 friendly: formData.get('friendly') === 'on',
                 funFact: formData.get('fun-fact')
             };
             addCub(cub)
                 .then(() => {
-                    window.location = `cub-list.html`;
+                    // window.location = `cub-list.html`;
                 })
                 .catch(err => {
                     console.log('cub not saved', err);
