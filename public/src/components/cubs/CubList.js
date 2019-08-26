@@ -5,6 +5,7 @@ class CubList extends Component {
 
     onRender(dom) {
         const cubs = this.props.cubs;
+        console.log(cubs)
         cubs.forEach(cub => {
             const props = { cub: cub };
             const cubItem = new CubItem(props);

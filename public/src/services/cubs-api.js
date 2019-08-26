@@ -1,5 +1,11 @@
 const URL = '/api';
 
+export function getCub(id) {
+    const url = `${URL}/cubs/${id}`;
+    return fetch(url)
+        .then(response => response.json());
+}
+
 export function getCubs() {
     const url = `${URL}/cubs`;
     return fetch(url)

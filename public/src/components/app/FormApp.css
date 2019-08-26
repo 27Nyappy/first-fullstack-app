@@ -15,6 +15,22 @@ p {
     margin: 2% auto;
 }
 
+.block {
+    display: block;
+    margin: 0 auto;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#center {
+    margin: 0 auto;
+    width: 30px;
+}
+
 input, select {
     width: 90%;
     height: 2rem;

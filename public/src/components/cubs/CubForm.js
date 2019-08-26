@@ -39,9 +39,9 @@ class CubForm extends Component {
                 <label for="image">Image URL</label>
                 <input type="url" id="image" name="image" required placeholder="Image URL">
             </p>
-            <p>
-                <label for="size">Size</label>
-                <select id="size" name="size-id" required>
+            <p class="block">
+                <label class="block" for="size">Size</label>
+                <select class="block" id="size" name="size-id" required>
                     <option disabled selected>&lt;Select a size&gt;</option>
                     ${optionsList.join('')}
                 </select>
@@ -50,9 +50,9 @@ class CubForm extends Component {
                 <label for="weight">Weight in pounds</label>
                 <input type="number" id="weight" name="weight" required>
             </p>
-            <p>
+            <p class="check">
                 <label for="friendly">Will I survive petting?</label>
-                <input type="checkbox" name="friendly">
+                <input id="center" type="checkbox" name="friendly">
             </p>
             <p>
                 <label for="fun-fact">Fun Fact</label>
