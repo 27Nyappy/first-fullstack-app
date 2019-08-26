@@ -1,0 +1,39 @@
+{
+  "name": "first-fullstack-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "exit 0",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js",
+    "create-tables": "node data/create-tables.js",
+    "drop-tables": "node data/drop-tables.js",
+    "load-seed-data": "node data/load-seed-data.js",
+    "recreate-tables": "npm run drop-tables && npm run create-tables",
+    "setup-db": "npm run recreate-tables && npm run load-seed-data"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/27Nyappy/first-fullstack-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/27Nyappy/first-fullstack-app/issues"
+  },
+  "homepage": "https://github.com/27Nyappy/first-fullstack-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.2.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "pg": "^7.12.1"
+  }
+}

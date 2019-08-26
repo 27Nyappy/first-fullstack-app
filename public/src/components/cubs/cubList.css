@@ -1,0 +1,18 @@
+@media screen and (min-width: 501px) {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 701px){
+    ul {
+        display: flex;
+    }
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 3px;
+}

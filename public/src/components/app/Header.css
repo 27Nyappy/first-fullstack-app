@@ -1,0 +1,40 @@
+#logo {
+    max-height: 100px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #000000;
+    color: white;
+    text-shadow: 1px 1px 1px #e5cf8c;
+}
+
+h1 {
+    width: 40%;
+    font-size: 2em;
+    flex-grow: 1;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 1%;
+    padding-right: 1%;
+    width: 30%
+}
+
+a {
+    color: white;
+    text-shadow: .5px .5px .5px #e5cf8c;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: #e5cf8c
+}
