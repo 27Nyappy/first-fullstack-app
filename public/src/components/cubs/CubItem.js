@@ -7,7 +7,7 @@ class CubItem extends Component {
 
         return /*html*/`
         <li class="cub-item">
-            <a href="cub-detail.html?id=${cub.id}">
+            <a class="anchor" href="cub-detail.html?id=${cub.id}">
                 <h2 class="name-title">${cub.name}</h2>
                 <img class="cub-list-image" src="${cub.url}" alt="${cub.name} image">
                 <p class="list-text">${cub.size}</p>

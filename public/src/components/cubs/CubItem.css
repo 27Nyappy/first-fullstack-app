@@ -1,14 +1,17 @@
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .cub-item {
         width: 80%;
         padding: 2%;
         text-align: center;
     }
+
+    .anchor {
+        width: 90%;
+    }
     .name-title {
         padding-bottom: 1%;
     }
     .cub-list-image {
-        min-width: 160px;
         width: 40%;
     }
     .list-text {
@@ -19,6 +22,9 @@
 @media screen and (min-width: 501px) and (max-width: 700px) {
     .cub-item {
         width: 45%;
+    }
+    .anchor {
+        width: 90%;
     }
     .cub-list-image {
         width: 40%;
@@ -32,6 +38,9 @@
     .cub-item {
         width: 45%;
     }
+    .anchor {
+        width: 90%;
+    }
     .cub-list-image {
         width: 75%;
     }
@@ -41,6 +50,16 @@
     .name-title {
         font-size: 1.8em;
     }
+}
+
+.anchor {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% auto;
+    text-decoration: none;
+    color: black;
 }
 
 .cub-item {

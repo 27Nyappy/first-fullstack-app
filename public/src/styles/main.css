@@ -2,4 +2,5 @@ body {
     background: #e5cf8c;
     background-image: url('../../assets/background.jpg');
     background-size: 100%, cover;
+    text-shadow: .5px .5px .5px #e5cf8c
 }

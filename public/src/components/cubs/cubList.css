@@ -2,14 +2,12 @@
     ul {
         display: flex;
         flex-wrap: wrap;
-
     }
 }
 
 @media screen and (min-width: 701px){
     ul {
         display: flex;
-        
     }
 }
 
