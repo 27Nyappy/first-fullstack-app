@@ -12,7 +12,7 @@ class CubDetail extends Component {
             <p class="list-text">${cub.size}</p>
             <p class="list-text">Weight in Lbs: <span class="weight-span">${cub.weight}</span></p>
             <p class="list-text">Will I survive petting? <span class="pet-span">${cub.friendly}</span></p>
-            <p class="list-text">${cub.funFact}.</p>
+            <p class="list-text">${cub.fun_fact}.</p>
         </div>
         `;
     }

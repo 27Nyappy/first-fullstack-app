@@ -1,0 +1,42 @@
+@media screen and (min-width: 320px) and (max-width: 550px) {
+    h2, p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 700px) {
+    h2, p {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    h2, p {
+        font-size: 2rem;
+    }
+}
+
+.cub-item {
+    width: 70%;
+    margin: 2% auto;
+    background: #a37319;
+    text-align: center;
+    box-shadow: 0px 0px 2px #f48700, 0px 0px 3px black, 0 0 5px black;
+    border-radius: 5px;
+}
+
+img.cub-list-image {
+    width: 80%;
+    border-radius: 5px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h2, p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+ 
