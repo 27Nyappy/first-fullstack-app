@@ -10,7 +10,6 @@ class CubFormApp extends Component {
         const main = dom.querySelector('main');
         getSizes()
             .then(sizes => {
-                console.log(sizes);
                 const cubForm = new CubForm({ sizes });
                 main.appendChild(cubForm.renderDOM());
             });

@@ -1,7 +1,7 @@
 import Component from '../Component.js';
 import { addCub } from '../../services/cubs-api.js';
 
-class FormApp extends Component {
+class CubForm extends Component {
     onRender(form) {
         form.addEventListener('submit', event => {
             event.preventDefault();
@@ -17,7 +17,7 @@ class FormApp extends Component {
             };
             addCub(cub)
                 .then(() => {
-                    // window.location = `cub-list.html`;
+                    window.location = `cub-list.html`;
                 })
                 .catch(err => {
                     console.log('cub not saved', err);
@@ -25,9 +25,7 @@ class FormApp extends Component {
         });
     }
     renderHTML() {
-        console.log(this.props);
         const sizes = this.props.sizes;
-        console.log(sizes)
         const optionsList = sizes.map(size => {
             return /*html*/`<option value="${size.id}">${size.size}</option>`;
         });
@@ -68,4 +66,4 @@ class FormApp extends Component {
     }
 }
 
-export default FormApp;
+export default CubForm;
